@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: go-app-service
+  labels:
+    app: go-app
+    tier: backend
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8000
+  selector:
+    app: go-app
+    tier: backend
+  loadBalancerIP: 35.189.139.196
