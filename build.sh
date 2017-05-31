@@ -1,6 +1,6 @@
 #!/bin/bash
 set -ex
-version=0.4.2 # imageのversionを指定
+version=0.6.6 # imageのversionを指定
 path=$PWD
 cd $GOPATH/src/github.com/techcampman/insta-team-4_2
 git pull

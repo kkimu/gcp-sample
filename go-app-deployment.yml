@@ -39,14 +39,14 @@ spec:
               readOnly: true
           resources:
             requests:
-              cpu: 200m
+              cpu: 100m
               memory: 512Mi
             limits:
-              cpu: 300m
+              cpu: 100m
               memory: 1024Mi
           ports:
           - containerPort: 8000
-          
+
         # [START proxy_container]
         - image: gcr.io/cloudsql-docker/gce-proxy:1.09
           name: cloudsql-proxy
